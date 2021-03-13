@@ -68,8 +68,8 @@ void Invoice::ReAllocateItems()
 	for (int i = 0; i < this->itemsLength; i++)
 	{
 		newItems[i] = this->items[i];
-		delete this->items[i];
 	}
+	delete[] this->items;
 	this->itemsLength += 10;
 	this->items = newItems;
 }
