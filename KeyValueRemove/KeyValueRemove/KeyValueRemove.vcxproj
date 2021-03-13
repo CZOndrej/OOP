@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KeyValue.cpp" />
     <ClCompile Include="KeyValueRemove.cpp" />
+    <ClCompile Include="KeyValues.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeyValue.h" />
+    <ClInclude Include="KeyValues.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
