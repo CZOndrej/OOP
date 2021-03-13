@@ -6,13 +6,20 @@ class Invoice
 {
 private:
 	int number;
+	int countItem;
+	int itemsLength;
 	Item** items;
 	Person* person;
+	void ReAllocateItems();
 
 public:
+	Invoice(int num, Person* person);
+	~Invoice();
 	int GetTotal();
 	int GetNumber();
-	int GetPerson();
+	Person* GetPerson();
+	void AddItem(Item* item);
+	int GetItemsCount();
 
 };
 

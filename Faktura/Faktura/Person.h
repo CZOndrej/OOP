@@ -10,6 +10,8 @@ private:
 	string name;
 
 public:
+	Person(Address* add, string name);
+	~Person();
 	string GetName();
 	Address* GetAddress();
 };

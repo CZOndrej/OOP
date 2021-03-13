@@ -12,6 +12,7 @@ private:
 	int postalCode;
 
 public:
+	Address(string str, int h, string city, int pc);
 	string GetStreet();
 	int GetHouse();
 	string GetCity();

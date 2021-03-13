@@ -10,6 +10,7 @@ private:
 	int price;
 
 public:
+	Item(string n, int p);
 	string GetName();
 	int GetPrice();
 };
